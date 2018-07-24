@@ -1,0 +1,19 @@
+{
+    "type":"catch",
+    "id": 81,
+    "description":"",
+    "staff_picked":false,
+    "caught_at_gmt":"2007-05-20T17:00:00.000Z",
+    "caught_at_local_time_zone":"2007-05-20T19:00:00.000+02:00",
+    "weight":2.0,
+    "length":null,
+    "private_fishing_water":false,
+    "private_position":false,
+    "external_id":"En9r01jW",
+    "deep_link":"https://fishbrain.onelink.me/2683494222?af_dp=fishbrain%3A%2F%2Fv2%2Fcatches%2FEn9r01jW\u0026af_web_dp=https%3A%2F%2Ffishbrain.com%2Fv2%2Fcatches%2FEn9r01jW",
+    "created_at":"2008-04-23T03:55:50.000Z",
+    "owner":{"id":41,"type":"user_ref"},
+    "species":{"type":"species_ref","id":258},
+    "bait":{"id":12444,"type":"bait_ref"},
+    "method":{"id":1,"type":"method_ref"}
+}

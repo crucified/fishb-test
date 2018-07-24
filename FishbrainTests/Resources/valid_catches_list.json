@@ -1,0 +1,64 @@
+[
+  {
+    "type": "catch",
+    "id": 115712,
+    "description": "Goldfish",
+    "staff_picked": false,
+    "caught_at_gmt": "2014-05-04T05:13:00.000Z",
+    "caught_at_local_time_zone": "2014-05-04T00:13:00.000-05:00",
+    "weight": 22.68,
+    "length": 1.37,
+    "private_fishing_water": false,
+    "private_position": false,
+    "external_id": "zKmmdjee",
+    "deep_link": "https://fishbrain.onelink.me/2683494222?af_dp=fishbrain%3A%2F%2Fv2%2Fcatches%2FzKmmdjee&af_web_dp=https%3A%2F%2Ffishbrain.com%2Fv2%2Fcatches%2FzKmmdjee",
+    "created_at": "2014-05-11T21:36:22.000Z",
+    "owner": {
+        "id": 71943,
+        "type": "user_ref"
+    },
+    "species": {
+        "type": "species_ref",
+        "id": 1073
+    },
+    "bait": {
+    "id": 50110,
+    "type": "bait_ref"
+    },
+    "method": {
+    "id": 5,
+    "type": "method_ref"
+    }
+  },
+  {
+    "type": "catch",
+    "id": 115713,
+    "description": "Gös fett gött :) !",
+    "staff_picked": false,
+    "caught_at_gmt": "2014-05-11T16:36:00.000Z",
+    "caught_at_local_time_zone": "2014-05-11T18:36:00.000+02:00",
+    "weight": 3.21,
+    "length": null,
+    "private_fishing_water": false,
+    "private_position": false,
+    "external_id": "82EHp8xi",
+    "deep_link": "https://fishbrain.onelink.me/2683494222?af_dp=fishbrain%3A%2F%2Fv2%2Fcatches%2F82EHp8xi&af_web_dp=https%3A%2F%2Ffishbrain.com%2Fv2%2Fcatches%2F82EHp8xi",
+    "created_at": "2014-05-11T21:39:17.000Z",
+    "owner": {
+        "id": 210384,
+        "type": "user_ref"
+    },
+    "species": {
+        "type": "species_ref",
+        "id": 360
+    },
+    "bait": {
+        "id": 6365,
+        "type": "bait_ref"
+    },
+    "method": {
+        "id": 2,
+        "type": "method_ref"
+    }
+  }
+]

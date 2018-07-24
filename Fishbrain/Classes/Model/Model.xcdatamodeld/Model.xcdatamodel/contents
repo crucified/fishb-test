@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bait" representedClassName="Bait" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="localizedName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="image" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Catch" representedClassName="Catch" syncable="YES">
+        <attribute name="caughtAtGMT" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="caughtAtLocalTimeZone" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="deepLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="externalID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="privateFishingWater" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="privatePosition" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="staffPicked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weatherCondition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="windDirection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bait" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bait" syncable="YES"/>
+        <relationship name="method" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Method" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+        <relationship name="species" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Species" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Method" representedClassName="Method" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="localizedName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coverImage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Owner" representedClassName="Owner" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="avatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Species" representedClassName="Species" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="species" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bait" positionX="-866" positionY="-1602" width="128" height="105"/>
+        <element name="Catch" positionX="-1035" positionY="-1665" width="128" height="313"/>
+        <element name="Image" positionX="-533" positionY="-1512" width="128" height="90"/>
+        <element name="Method" positionX="-722" positionY="-1557" width="128" height="90"/>
+        <element name="Owner" positionX="-695" positionY="-1458" width="128" height="120"/>
+        <element name="Species" positionX="-693" positionY="-1278" width="128" height="120"/>
+    </elements>
+</model>
